@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      header {
+        background-image: url(coconuttree.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      header h1 {
+        color: gray;
+        text-shadow: 1px 1px 1px black;
+      }
+
+      header p {
+        animation: warna 5s infinite;
+      }
+
+      body {
+        background-color: azure;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+
+      nav {
+        position: sticky;
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        font-size: 20px;
+        background-color: khaki;
+        padding: 10px;
+        border-style: outset;
+        border-radius: 10px;
+      }
+
+      .destination {
+        background-color: blanchedalmond;
+        border-style: outset;
+        border-radius: 10px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      .package {
+        background-color: skyblue;
+        border-style: outset;
+        border-radius: 10px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      ul {
+        list-style-type: inherit;
+      }
+
+      @media (max-width: 430px) {
+        .destination,
+        .package {
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+      #destination:hover {
+        opacity: 0.5;
+      }
+
+      #package:hover {
+        opacity: 0.5;
+      }
+
+      @keyframes warna {
+        0% {
+          color: black;
+        }
+        100% {
+          color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NUSANTARAVEL</h1>
+      <p>Jelajahi Pesona Indonesia</p>
+
+      <br />
+    </header>
+
+    <nav>
+      <a href="#destination">Destinasi Liburan</a>
+      <a href="#package">Paket Perjalanan</a>
+      <a href="#contact">Kontak kami</a>
+    </nav>
+    <br />
+    <br />
+    <br />
+
+    <main>
+      <h2 id="destination">Destinasi Liburan</h2>
+      <section class="destination">
+        <figure>
+          <img
+            src="bali.jpg"
+            alt="Bali"
+            title="Bali"
+            width="100px"
+            leng="100px"
+          />
+          <figcaption>Bali</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="Bromo.jpg"
+            alt="Gunung Bromo"
+            title="Gunung Bromo"
+            width="100px"
+            leng="100px"
+          />
+          <figcaption>Gunung Bromo</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="komodo island.jpg"
+            alt="Pulau Komodo"
+            title="Pulau Komodo"
+            width="100px"
+            leng="100px"
+          />
+          <figcaption>Pulau Komodo</figcaption>
+        </figure>
+      </section>
+      <br />
+      <br />
+      <br />
+
+      <h2 id="package">Paket Perjalanan</h2>
+      <section class="package">
+        <p>2 Hari</p>
+        <p>3 Hari</p>
+        <p>4 Hari</p>
+        <br />
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <section class="contact" id="contact">
+        <fieldset>
+          <legend>Kontak kami</legend>
+          <form action="https://httpbin.org/get" method="get">
+            <p>
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" placeholder="nama anda" />
+            </p>
+            <p>
+              <label for="surel">Email</label>
+              <input type="text" id="surel" placeholder="email anda" />
+            </p>
+            <p>
+              <label for="pesan">Pesan anda</label>
+              <br />
+              <textarea
+                name="tanggapan"
+                id="pesan"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </p>
+            <p>
+              <label for="destinasi">Pilih Destinasi Wisata Anda</label><br />
+              <select name="destinasi" id="destinasi">
+                <option value="Bali">Bali</option>
+                <option value="Pulau Komodo">Pulau Komodo</option>
+                <option value="Gunung Bromo">Gunung Bromo</option>
+              </select>
+            </p>
+            <button type="submit">Kirim</button>
+          </form>
+        </fieldset>
+      </section>
+
+      <h2>Alamat Kantor</h2>
+      <ul>
+        <li>Jl. **** No **** Jakarta</li>
+        <li>Jl. **** No **** Bandung</li>
+        <li>Jl. **** No **** Medan</li>
+      </ul>
+      <span>
+        <picture>
+          <source media="(min-width: 430px)" srcset="Thanks2.jpg" />
+          <img src="Thanks1.jpg" alt="Thankyou" width="200px" length="800px" />
+        </picture>
+      </span>
+    </main>
+  </body>
+</html>

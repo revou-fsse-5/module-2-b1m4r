@@ -10,101 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      header {
-        background-image: url(coconuttree.jpg);
-        background-size: cover;
-        background-position: center;
-      }
-      header h1 {
-        color: gray;
-        text-shadow: 1px 1px 1px black;
-      }
-
-      header p {
-        animation: warna 5s infinite;
-      }
-
-      body {
-        background-color: azure;
-        font-family: "Inter", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-variation-settings: "slnt" 0;
-      }
-
-      nav {
-        position: sticky;
-        top: 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-
-        font-size: 20px;
-        background-color: khaki;
-        padding: 10px;
-        border-style: outset;
-        border-radius: 10px;
-      }
-
-      .destination {
-        background-color: blanchedalmond;
-        border-style: outset;
-        border-radius: 10px;
-        text-align: center;
-
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-
-        justify-content: center;
-        align-items: center;
-      }
-
-      .package {
-        background-color: skyblue;
-        border-style: outset;
-        border-radius: 10px;
-        text-align: center;
-
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-
-        justify-content: center;
-        align-items: center;
-      }
-
-      ul {
-        list-style-type: inherit;
-      }
-
-      @media (max-width: 430px) {
-        .destination,
-        .package {
-          flex-direction: column;
-          align-items: stretch;
-        }
-      }
-      #destination:hover {
-        opacity: 0.5;
-      }
-
-      #package:hover {
-        opacity: 0.5;
-      }
-
-      @keyframes warna {
-        0% {
-          color: black;
-        }
-        100% {
-          color: yellow;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -171,8 +77,17 @@
       <br />
       <br />
       <br />
-      <br />
 
+      <div class="grid-container">
+        <div class="grid-item item1">Nusantaravel</div>
+        <div class="grid-item item2">Jelajahi Pesona Indonesia</div>
+        <div class="grid-item item3">Domestic Destination</div>
+        <div class="grid-item item4">Wonderful Indonesia</div>
+        <div class="grid-item item5">Adventure</div>
+        <div class="grid-item item6">Nature</div>
+      </div>
+
+      <br />
       <br />
       <br />
       <br />
